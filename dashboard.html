@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Info Portal - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex h-screen">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md flex flex-col">
+    <div class="p-6 font-bold text-xl border-b border-gray-200">
+      Student Portal
+    </div>
+    <nav class="flex-grow p-4 space-y-2">
+      <a href="dashboard.html" class="block py-2 px-4 rounded bg-blue-600 text-white hover:bg-blue-700">Dashboard</a>
+      <a href="profile.html" class="block py-2 px-4 rounded text-gray-700 hover:bg-gray-200">Profile</a>
+      <a href="login.html" class="block py-2 px-4 rounded text-gray-700 hover:bg-gray-200">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex flex-col flex-grow">
+    <!-- Top Navbar -->
+    <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">Dashboard</h1>
+      <div class="text-gray-600">Welcome, Mishal!</div>
+    </header>
+
+    <!-- Content Area -->
+    <main class="p-6 overflow-auto flex-grow bg-gray-50">
+      <h2 class="text-xl font-semibold mb-4">Student Records</h2>
+
+      <div class="overflow-x-auto bg-white rounded shadow">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-medium uppercase">ID</th>
+              <th class="px-6 py-3 text-left text-sm font-medium uppercase">Name</th>
+              <th class="px-6 py-3 text-left text-sm font-medium uppercase">Email</th>
+              <th class="px-6 py-3 text-left text-sm font-medium uppercase">Course</th>
+              <th class="px-6 py-3 text-left text-sm font-medium uppercase">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">1</td>
+              <td class="px-6 py-4 whitespace-nowrap">Ali Khan</td>
+              <td class="px-6 py-4 whitespace-nowrap">ali.khan@example.com</td>
+              <td class="px-6 py-4 whitespace-nowrap">Computer Science</td>
+              <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">Active</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">2</td>
+              <td class="px-6 py-4 whitespace-nowrap">Sara Ahmed</td>
+              <td class="px-6 py-4 whitespace-nowrap">sara.ahmed@example.com</td>
+              <td class="px-6 py-4 whitespace-nowrap">Mathematics</td>
+              <td class="px-6 py-4 whitespace-nowrap text-red-600 font-semibold">Inactive</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">3</td>
+              <td class="px-6 py-4 whitespace-nowrap">Hamid Ali</td>
+              <td class="px-6 py-4 whitespace-nowrap">hamid.ali@example.com</td>
+              <td class="px-6 py-4 whitespace-nowrap">Physics</td>
+              <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
